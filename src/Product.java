@@ -1,7 +1,7 @@
 public class Product {
 
-   private String name;
-
+    private String name;
+    private Console console;//null
     private int cost;
 
 
@@ -15,13 +15,17 @@ public class Product {
         name = variable;
     }
 
+    public void setConsole(Console console) {
+        this.console = console;
+    }
+
     public int getCost() {
         return cost;
     }
 
-//    public void setCost(int cost) {
-//        this.cost = cost;
-//    }
+    public void setCost(int cost) {
+        this.cost = cost;
+    }
 
 public void upCost(){
         cost ++;
@@ -38,5 +42,8 @@ public void downCost(){
 
     public String getName(){
         return name;
+    }
+    public void print(){
+        console.vuvod(name+" "+cost);
     }
 }

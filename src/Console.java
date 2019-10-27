@@ -1,12 +1,19 @@
 public class Console {
 
-    public static String getString() {
+    public String getString() {
 
         return "f";
     }
 
-    public static int getInt() {
+    public int getInt() {
 
         return 5;
     }
+
+    public void vuvod (String variab){
+
+        System.out.println(variab);
+    }
+
+
 }
